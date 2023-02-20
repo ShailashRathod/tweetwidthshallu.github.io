@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="html2" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="iframe-main">
+        <div class="book-main-con1">
+            <div class="top-view">
+                <div class="header-message">
+                    <span>Messages</span>
+                    <div>
+                    <img src="../image/setting.svg" height="20px">
+                    <img src="../image/messege.svg" height="20px">
+                </div>
+                </div>
+                <div class="content-message">
+                    <span>Welcome to your<br>
+                        index!
+                    </span>
+                    <p>Drop aline,dhare Tweets and more with <br>
+                        private conversation betwwet you and others<br>onTwitter
+                    </p>
+                    <div class="tweet_btn">
+                        <button class="btn1">
+                            <div class="item-txt">Write a message</div>
+                            </button>
+                    </div>
+                </div>
+                
+                
+        </div>
+        </div>
+        <div class="iframe-main-con2">
+            <div class="content-message right-message">
+                <span>Select messege</span>
+                <p>Choose from your exiding conversation,starta<br>
+                   new one,or just keep swimmimg
+                </p>
+                <div class="tweet_btn">
+                    <button class="btn1">
+                        <div class="item-txt">Write a message</div>
+                        </button>
+                </div>
+            </div>
+            
+    </div>
+</div>
+    
+</body>
+<script>
+     
+    let iframe_tweet = document.getElementsByClassName('iframe-tweet');
+    let  follow_class = document.getElementsByClassName("follow-page");
+
+    let x = follow_class.length;
+
+     for( let i = 0 ; i < x ; i++){
+        follow_class[i].addEventListener('click', (e) => { 
+            let current =  document.getElementsByClassName("active");
+            current[0].className =  current[0].className.replace("active",);
+            iframe_tweet[i].className += " active";
+
+                } );
+    
+     }
+
+
+    let elements = document.getElementsByClassName('follow-btn');
+    let n = elements.length;
+
+     for( let i = 0 ; i < n ; i++)
+    {
+        elements[i].addEventListener('click', 
+        
+        (e) => {
+                    let id = e.target.id;
+                    console.log(id)
+                    var idContent = document.getElementById(id).innerText;  
+                    console.log(idContent) 
+
+                    {  idContent == "Follow" ? document.getElementById(id).innerText ="Following" 
+                                            : document.getElementById(id).innerText = "Follow"  }
+
+                } );
+     }
+
+</script>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desktop page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="desk_container">
+        <div class="deskbox1">
+            <div class="menu">
+                <div><img src="./image/twitter.svg" class="bird-icon" alt="" class="img"></div>
+                <div><a href="#">
+                        <div class="item">
+                            <div><a href="./Pages/HomePage.html" target="frame">
+                                    <img src="./image/home.svg" alt="" class="m-icon"></div>
+                            <div class="item-txt">Home
+                    </a></div>
+            </div>
+            </a>
+        </div>
+        <div><a href="#">
+                <div class="item">
+                    <div><a href="./Pages/explore.html" target="frame">
+                            <img class="m-icon" src="./image/hashtag.svg" alt=""></div>
+                    <div class="item-txt">Explore
+            </a></div>
+    </div>
+    </a></div>
+    <div><a href="#">
+            <div class="item">
+                <div><a href="./Pages/notification.html" target="frame">
+                        <img class="m-icon" src="./image/bell.svg" alt=""></div>
+                <div class="item-txt">Notifications
+        </a></div>
+    </div>
+    </a>
+    </div>
+    <div><a href="#">
+            <div class="item">
+                <div><a href="./Pages/messege.html" target="frame">
+                        <img class="m-icon" src="./image/bookmark.svg" alt=""></div>
+                <div class="item-txt">Messeges
+        </a></div>
+    </div>
+    </a></div>
+    <div><a href="#">
+            <div class="item">
+                <div><a href="./Pages/bookmark.html" target="frame">
+                        <img class="m-icon" src="./image/hashtag.svg" alt=""></div>
+                <div class="item-txt">Bookmarks
+        </a></div>
+    </div>
+    </a></div>
+    <div><a href="#">
+            <div class="item">
+                <div><a href="./Pages/list.html" target="frame">
+                        <img class="m-icon" src="./image/list.svg" alt=""></div>
+                <div class="item-txt">Lists
+        </a></div>
+    </div>
+    </a></div>
+    <div><a href="#">
+            <div class="item">
+                <div><a href="./Pages/profile.html" target="frame">
+                        <img class="m-icon" src="./image/profile.svg" alt=""></div>
+                <div class="item-txt">Profile
+        </a></div>
+    </div>
+    </a></div>
+
+    <div class="more-dropdow" id="drop">
+        <div class="more-topic1">
+            <span><img src="../image/comment.svg" height="20px">Topics</span>
+            <span><img src="../image/list.svg" height="20px">Lists</span>
+            <span><img src="../image/profile hart.svg" height="20px">Twitter Circle</span>
+        </div>
+
+        <div class="more-topic2">
+            <p>Creator Studio <img src="../image/du arrow.svg" height="20px"></p>
+            <p>Professional Tools<img src="../image/du arrow.svg" height="20px"></p>
+            <p>Settings and Support <img src="../image/du arrow.svg" height="20px"></p>
+        </div>
+    </div>
+
+    <div onclick="more()"><a href="#">
+            <div class="item">
+                <div><a href="./Pages/more.html" target="frame">
+                        <img class="m-icon" src="../image/3dot.svg" alt=""></div>
+                <div class="item-txt">More
+        </a></div>
+    </div>
+    </a></div>
+    <div class="button">
+        <div class="tweet_btn">
+            <button class="btn1" onclick="tweetOpan()">
+                <div class="item-txt">Tweet</div>
+            </button>
+        </div>
+
+        <div class="tweet-text-send" id="form">
+            <form>
+                <div class="tweet-text">
+                    <img src="../image/close.svg" height="25px">
+                    <div class="tweet-dropdow">
+                        <img class="user-icon" src="../image/temp.jpg" alt="">
+                        <span>Everyone<img src="../image/du arrow.svg" height="20px"></span>
+                    </div>
+                    <input class="input-tweet" type="text" placeholder="What's happening ?">
+                    <p class="reply">Everyone can reply</p>
+                </div>
+                <div class="iframe-tweet-icons">
+                    <div class="iframe-tweet-icon">
+                        <img src="../image/gellary.svg" alt="">
+                        <img src="../image/gif.svg" alt="">
+                        <img src="../image/icon1.svg" alt="">
+                        <img src="../image/smaile.svg" alt="">
+                        <img src="../image/date.svg" alt="">
+                        <img src="../image/location.svg" alt="">
+                    </div>
+                    <div class="iframe-tweet-btn">
+                        <button>Tweet</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="logout" id="logout">
+            <p>Add an existing account</p>
+            <p>Log out @SHAILESHRATHOD465</p>
+        </div>
+        <div class="user" onmouseenter="toggle()">
+            <img class="id-dot  item-txt" src="./image/3dot.svg" alt="">
+            <p class="btn2">S</p>
+            <p class="id1 item-txt">SHAILESH RATHOD</p>
+            <p class="id2 item-txt">shaileshrathod@...</p>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="deskbox2">
+        <iframe name="frame" class="iframe" src="./Pages/HomePage.html" frameborder="0" width="100%"
+            height="99%"></iframe>
+    </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
